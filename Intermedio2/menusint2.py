@@ -19,10 +19,10 @@ def registrardependencia()->list:
     while(isActive):
         
         dependencia = input("REGISTRE LA DEPENDENCIA: ").upper()  
-        dependen = [dependencia, []]
+        dependen = [dependencia]
         
 
-        rta = input("¿DESEA REGISTRAR OTRA DEPENDENCIA? S(si)/N(no): ")
+        rta = input("¿DESEA REGISTRAR OTRA DEPENDENCIA? S(si)/N(no): ").upper() 
         if (rta != "S"):
             isActive = False
      
